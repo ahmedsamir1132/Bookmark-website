@@ -122,7 +122,7 @@ function deleteSite(index) {
 
 function visitSite(index) {
     if (sites[index].url.search("http://") != true && sites[index].url.search("https://") != true) {
-        sites[index].url = "http://" + sites[index].url;
+        open("http://" + sites[index].url, "_blank");
     }
     open(sites[index].url, "_blank");
 }
