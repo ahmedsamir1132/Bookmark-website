@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Bookmark</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="p-4 my-2 border-bottom border-dark">
+                    <h3 class="text-uppercase fw-bold main-color my-4">bookmarker</h3>
+                </div>
+
+                <div class="main-bg-color text-black p-4 mt-3 text-center">
+                    <h3 class="my-2">Bookmark your favorite sites</h3>
+                    <label for="setName" class="text-capitalize mt-4 mb-2 fw-bold">site name</label>
+                    <input id="setName" type="text" placeholder="Bookmark Name" class="form-control w-75 m-auto">
+                    <div id="nameAlert" class="alert alert-danger m-auto w-75 my-2 d-none">Try to write 4 - 12 letters includes(A-Z or a-z or 0-9)</div>
+                    <label for="setUrl" class="text-capitalize mt-4 mb-2 fw-bold">site URL</label>
+                    <input id="setUrl" type="text" placeholder="website URL" class="form-control w-75 m-auto">
+                    <label for="search" class="text-capitalize mt-4 mb-2 fw-bold">search</label>
+                    <input id="search" type="text" placeholder="Search by name" class="form-control w-75 m-auto">
+                    <div id="urlAlert" class="alert alert-danger m-auto w-75 my-2 d-none">Try to write www. followed by 4 - 15 letters includes(A-Z or a-z or 0-9) followed by (. and 2 - 64 letters includes(a-z))</div>
+                    <button id="subBtn" class="btn btn-primary mt-3 m-auto text-capitalize" disabled>submit</button>
+                </div>
+
+                <table id="crudTable" class="table mt-3 main-bg-color">
+                    <thead class="text-center">
+                        <th></th>
+                        <th>Name</th>
+                        <th>Url</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody id="tableBody" class="text-center">
+                    </tbody>
+                </table>
+
+                <div class="p-3 mt-5 main-color border-dark border-top">
+                    <p class="main-color">© 2019 Bookmarker Inc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
