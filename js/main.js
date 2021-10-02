@@ -62,7 +62,7 @@ addBtn.onclick = function () {
     if (addBtn.innerHTML == "Update") {
         sites[siteIndex].name = siteName.value;
         sites[siteIndex].url = siteUrl.value;
-        addBtn.classList.replace("btn-warning","btn-primary");
+        addBtn.classList.replace("btn-warning", "btn-primary");
         addBtn.innerHTML = "submit";
         localStorage.setItem("sitesList", JSON.stringify(sites));
     }
@@ -118,6 +118,9 @@ function deleteSite(index) {
     sites.splice(index, 1);
     localStorage.setItem("sitesList", JSON.stringify(sites));
     display();
+    clearform();
+    addBtn.classList.replace("btn-warning", "btn-primary");
+    addBtn.innerHTML = "submit";
 }
 
 function visitSite(index) {
